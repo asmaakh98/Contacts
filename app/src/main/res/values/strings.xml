@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Contacts</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="favorites">Favorites</string>
+    <string name="all">All</string>
+    <string name="addContact">TODO</string>
+    <string name="person">person</string>
+    <string name="name">Name</string>
+    <string name="nickname">Nickname</string>
+    <string name="Phone">Phone</string>
+    <string name="Email">Email</string>
+    <string name="Occupation">Occupation</string>
+    <string name="Nationality">Nationality</string>
+    <string name="Location">Location</string>
+    <string name="field_name">Field Name</string>
+    <string name="cancel">Cancel</string>
+    <string name="Save">Save</string>
+    <string name="saveContact">saveContact</string>
+    <string name="cancelAddContact">cancelAddContact</string>
+    <string name="AddField">Add Field</string>
+</resources>

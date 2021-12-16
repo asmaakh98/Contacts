@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbarSize="10dp"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/imageView2"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_marginStart="135dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="135dp"
+            android:contentDescription="@string/person"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_round_account_circle_24" />
+
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="342dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="34dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="34dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="@string/name"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:fontFamily="cursive"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+        <EditText
+            android:id="@+id/editTextNickname"
+            android:layout_width="342dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="34dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="34dp"
+            android:ems="10"
+            android:fontFamily="cursive"
+            android:hint="@string/nickname"
+            android:inputType="textPersonName"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextName"
+            tools:ignore="TextContrastCheck" />
+
+
+        <EditText
+            android:id="@+id/editTextPhone"
+            android:layout_width="342dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="34dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="34dp"
+            android:ems="10"
+            android:fontFamily="cursive"
+            android:hint="@string/Phone"
+            android:inputType="phone"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextNickname"/>
+
+
+        <EditText
+            android:id="@+id/editTextEmailAddress"
+            android:layout_width="342dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="34dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="34dp"
+            android:ems="10"
+            android:fontFamily="cursive"
+            android:hint="@string/Email"
+            android:inputType="textEmailAddress"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextPhone"/>
+
+        <EditText
+            android:id="@+id/editTextOccupation"
+            android:layout_width="342dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="34dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="34dp"
+            android:ems="10"
+            android:fontFamily="cursive"
+            android:hint="@string/Occupation"
+            android:inputType="textPersonName"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextEmailAddress"
+            tools:ignore="TextContrastCheck" />
+
+        <EditText
+            android:id="@+id/editTextNationality"
+            android:layout_width="342dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="34dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="34dp"
+            android:ems="10"
+            android:fontFamily="cursive"
+            android:hint="@string/Nationality"
+            android:inputType="textPersonName"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextOccupation"
+            tools:ignore="TextContrastCheck" />
+
+        <EditText
+            android:id="@+id/editTextLocation"
+            android:layout_width="342dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="34dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="34dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="@string/Location"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:fontFamily="cursive"
+            app:layout_constraintTop_toBottomOf="@+id/editTextNationality" />
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/addFieldBtn"
+            android:layout_width="342dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="34dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="34dp"
+            android:text="@string/AddField"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextLocation" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@+id/addFieldBtn">
+
+
+            <ImageButton
+                android:id="@+id/saveContactBtn"
+                android:layout_width="70dp"
+                android:layout_height="57dp"
+                android:layout_marginStart="34dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="34dp"
+                app:srcCompat="@drawable/ic_baseline_add_24"
+                android:contentDescription="@string/saveContact" />
+
+            <ImageButton
+                android:id="@+id/cancelAddContactBtn"
+                android:layout_width="70dp"
+                android:layout_height="57dp"
+                android:layout_marginStart="34dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="34dp"
+                android:contentDescription="@string/cancelAddContact"
+                app:srcCompat="@drawable/ic_baseline_clear_24" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>
